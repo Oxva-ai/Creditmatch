@@ -253,6 +253,250 @@ async function main() {
     }
   }
 
+  // ── Seed Articles ─────────────────────────────────────────────
+  const articles = [
+    {
+      title: "Best Credit Cards in the UK for 2025",
+      slug: "best-credit-cards-uk-2025",
+      excerpt: "Our pick of the top credit cards across every category — cashback, balance transfer, credit building, and more.",
+      content: `# Best Credit Cards in the UK for 2025
+
+Choosing the right credit card can save you hundreds of pounds in interest and rewards. Here's our comprehensive guide to the best credit cards available in the UK right now.
+
+## Best Overall: Chase UK Credit Card
+
+The Chase UK credit card offers up to 1% cashback on everyday spending with no annual fee. It's our top pick for most people because of its simplicity and wide acceptance.
+
+**Key features:**
+- Up to 1% cashback on all purchases
+- No annual fee
+- No foreign transaction fees
+- Representative 22.9% APR
+
+## Best for Balance Transfers: MBNA Balance Transfer Plus
+
+If you're looking to consolidate existing credit card debt, the MBNA Balance Transfer Plus offers 0% for up to 34 months — one of the longest promotional periods available.
+
+## Best for Building Credit: Aquarius Credit Builder
+
+For those with less-than-perfect credit histories, the Aquarius Credit Builder is designed to help you rebuild your score responsibly.
+
+## How We Chose
+
+We evaluated over 50 credit cards available in the UK market, considering:
+- **APR and fees** — The true cost of borrowing
+- **Rewards and cashback** — What you get back
+- **Acceptance criteria** — Who can apply
+- **Customer service** — FCA ratings and consumer feedback
+
+Remember: always check your eligibility before applying to avoid unnecessary hard searches on your credit file.
+
+*Last updated: April 2025*`,
+      category: "guide",
+      targetKeyword: "best credit cards UK 2025",
+      metaTitle: "Best Credit Cards in the UK for 2025 — CreditMatch.uk",
+      metaDescription: "Compare the top UK credit cards for 2025. Find the best cards for cashback, balance transfers, credit building, and more.",
+      isPublished: true,
+    },
+    {
+      title: "How to Build Your Credit Score in the UK",
+      slug: "how-to-build-credit-score-uk",
+      excerpt: "Step-by-step guide to improving your credit score, from checking your report to using credit builder cards.",
+      content: `# How to Build Your Credit Score in the UK
+
+Your credit score is one of the most important financial numbers in the UK. It affects whether you can get a credit card, mortgage, phone contract, or even rent a flat.
+
+## What Is a Credit Score?
+
+A credit score is a number between 0 and 999 (depending on the agency) that represents how creditworthy you are. The three main credit reference agencies in the UK are:
+
+- **Experian** (0–999)
+- **Equifax** (0–1000)
+- **TransUnion** (0–710)
+
+## 5 Steps to Improve Your Credit Score
+
+### 1. Check Your Credit Report for Errors
+
+You're entitled to a free statutory credit report from each agency. Check for:
+- Incorrect personal details
+- Accounts you don't recognise
+- Incorrect payment histories
+- Closed accounts still showing as open
+
+### 2. Register on the Electoral Roll
+
+This is one of the simplest ways to improve your score. Lenders use it to verify your identity and address.
+
+### 3. Use a Credit Builder Card
+
+Credit builder cards are designed for people with poor or limited credit history. They typically have:
+- Higher APR (often 30%+)
+- Lower credit limits (£200–£1,200)
+- No annual fee
+
+Use them for small purchases and **always pay off the full balance each month**.
+
+### 4. Set Up Direct Debits
+
+Missing payments is the worst thing for your credit score. Set up direct debits for at least the minimum payment on every credit agreement.
+
+### 5. Keep Credit Utilisation Below 25%
+
+If your credit limit is £1,000, try never to owe more than £250 at your statement date.
+
+## How Long Does It Take?
+
+You should see improvements within 3–6 months of consistent good behaviour. Major improvements (like moving from "poor" to "good") can take 12–24 months.
+
+## When to Apply for a Better Card
+
+Once you've had a credit builder card for 6–12 months with perfect payments, you can apply for a mainstream rewards or cashback card.
+
+*Last updated: April 2025*`,
+      category: "credit-builder",
+      targetKeyword: "how to build credit score UK",
+      metaTitle: "How to Build Your Credit Score in the UK — CreditMatch.uk",
+      metaDescription: "Learn how to improve your UK credit score with our step-by-step guide. Tips on credit builder cards, electoral roll, and more.",
+      isPublished: true,
+    },
+    {
+      title: "Complete Guide to Balance Transfer Cards",
+      slug: "balance-transfer-guide-uk",
+      excerpt: "Everything you need to know about transferring credit card balances to save on interest.",
+      content: `# Complete Guide to Balance Transfer Cards in the UK
+
+If you're paying high interest on an existing credit card, a balance transfer could save you hundreds of pounds.
+
+## What Is a Balance Transfer?
+
+A balance transfer moves debt from one credit card to another, usually one with a 0% introductory rate. This means you pay no interest for a set period while you pay down the balance.
+
+## Top Balance Transfer Cards Right Now
+
+| Card | 0% Period | Balance Transfer Fee | Representative APR |
+|------|-----------|---------------------|-------------------|
+| MBNA Balance Transfer Plus | 34 months | 2.49% | 24.9% |
+| Barclaycard Platinum | 20 months | 0% | 26.9% |
+
+## How to Do a Balance Transfer
+
+1. **Check your eligibility** — Use an eligibility checker to avoid unnecessary searches
+2. **Apply for the new card** — Make sure you're approved before initiating the transfer
+3. **Request the transfer** — Provide your old card details to the new provider
+4. **Keep paying the old card** — Until you receive confirmation the transfer is complete
+5. **Set up a repayment plan** — Calculate how much you need to pay monthly to clear the balance before the 0% period ends
+
+## Common Mistakes
+
+- **Missing payments** — This can cancel your 0% rate
+- **Making new purchases on the card** — These usually aren't at 0%
+- **Not clearing the balance in time** — Standard APR kicks in after the promotional period
+
+*Last updated: April 2025*`,
+      category: "balance-transfer",
+      targetKeyword: "balance transfer credit cards UK",
+      metaTitle: "Balance Transfer Credit Cards Guide — CreditMatch.uk",
+      metaDescription: "Save on interest with a balance transfer credit card. Compare the best 0% balance transfer cards in the UK.",
+      isPublished: true,
+    },
+    {
+      title: "Best Credit Cards for Self-Employed UK",
+      slug: "credit-card-for-self-employed-uk",
+      excerpt: "Self-employed? Here are the cards most likely to accept your application and the criteria lenders look for.",
+      content: `# Best Credit Cards for Self-Employed People in the UK
+
+Being self-employed can make it harder to get a credit card, but there are still great options available.
+
+## Why Is It Harder?
+
+Lenders see self-employed people as higher risk because:
+- Income can be variable
+- No payslip to verify earnings
+- Some lenders only look at the last year's accounts
+
+## What Lenders Want to See
+
+- **Two years of accounts** — Some will accept one year
+- **Good credit history** — No missed payments in the last 6 years
+- **Stable address** — At the same address for 3+ years
+- **Affordability** — Net income after business expenses
+
+## Best Cards for Self-Employed
+
+1. **Capital One Classic** — Lower income requirement (from £10,000)
+2. **Sainsbury's Bank** — Accepts self-employed with one year of accounts
+3. **Chase UK** — Looks at overall financial picture, not just employment status
+
+## Tips
+
+- Use your **net profit** (after expenses) as your income, not gross revenue
+- Have your **SA302 form** from HMRC ready
+- Consider applying with a **joint applicant** who has stable employment
+
+*Last updated: April 2025*`,
+      category: "guide",
+      targetKeyword: "credit cards self employed UK",
+      metaTitle: "Best Credit Cards for Self-Employed UK — CreditMatch.uk",
+      metaDescription: "Find the best credit cards for self-employed people in the UK. Tips on eligibility and what lenders look for.",
+      isPublished: true,
+    },
+    {
+      title: "Top Cashback Credit Cards in the UK",
+      slug: "cashback-credit-cards-uk",
+      excerpt: "Earn money back on everyday spending. We compare the best cashback cards and their earning rates.",
+      content: `# Top Cashback Credit Cards in the UK
+
+Cashback credit cards give you money back on every purchase. Here are our top picks for 2025.
+
+## Best Overall Cashback Card
+
+**Chase UK Credit Card** — Up to 1% cashback on all purchases, no annual fee, no foreign transaction fees.
+
+### How Much Could You Earn?
+
+If you spend £1,000 per month on your Chase card:
+- 1% cashback = **£10/month** or **£120/year**
+- No cap on cashback earned
+
+## Premium Cashback
+
+**American Express Blue Cash** — 5% cashback for the first 3 months (up to £125), then 1% ongoing.
+
+### Introductory Period Breakdown
+- Month 1–3: 5% cashback (up to £125 total)
+- Month 4+: 1% cashback (uncapped)
+
+## Important Considerations
+
+- **Pay your balance in full** — Interest charges will wipe out any cashback
+- **Check acceptance criteria** — Premium cards often require excellent credit
+- **Annual fees** — Some cashback cards charge an annual fee after the first year
+
+*Last updated: April 2025*`,
+      category: "cashback",
+      targetKeyword: "best cashback credit cards UK",
+      metaTitle: "Top Cashback Credit Cards UK — CreditMatch.uk",
+      metaDescription: "Compare the best cashback credit cards in the UK. Earn money back on everyday spending with our top picks.",
+      isPublished: true,
+    },
+  ];
+
+  for (const a of articles) {
+    const existing = await prisma.article.findUnique({ where: { slug: a.slug } });
+    if (!existing) {
+      await prisma.article.create({
+        data: {
+          ...a,
+          publishedAt: new Date(),
+        },
+      });
+      console.log(`  ✅ Article: ${a.title}`);
+    } else {
+      console.log(`  ⏭️  Article: ${a.title} (already exists)`);
+    }
+  }
+
   // ── Seed Sample Partners ────────────────────────────────────────
   const partners = [
     { name: "ClearScore", email: "partnerships@clearscore.com", payoutPerLead: 20.0, company: "ClearScore Ltd" },

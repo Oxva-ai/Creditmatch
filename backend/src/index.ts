@@ -8,6 +8,7 @@ import leadsRouter from "./routes/leads.js";
 import productsRouter from "./routes/products.js";
 import authRouter from "./routes/auth.js";
 import statsRouter from "./routes/stats.js";
+import articlesRouter from "./routes/articles.js";
 
 dotenv.config();
 
@@ -41,6 +42,7 @@ app.get("/api/health", (_req, res) => {
 // Routes
 app.use("/api/leads", leadsRouter);
 app.use("/api/products", productsRouter);
+app.use("/api/articles", articlesRouter);
 app.use("/api/admin/auth", authRouter);
 app.use("/api/admin/stats", statsRouter);
 
