@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { PrismaClient } from "@prisma/client";
-import { requireAuth } from "../middleware/auth.js";
+import { authenticate } from "../middleware/auth.js";
 import slugify from "slugify";
 
 const prisma = new PrismaClient();
@@ -57,7 +57,7 @@ router.get("/:slug", async (req, res) => {
 /**
  * GET /api/admin/articles — List all articles (incl. unpublished)
  */
-router.get("/admin/articles", requireAuth, async (_req, res) => {
+router.get("/admin/articles", authenticate, async (_req, res) => {
   try {
     const articles = await prisma.article.findMany({
       orderBy: { createdAt: "desc" },
@@ -71,7 +71,7 @@ router.get("/admin/articles", requireAuth, async (_req, res) => {
 /**
  * POST /api/admin/articles — Create article
  */
-router.post("/admin/articles", requireAuth, async (req, res) => {
+router.post("/admin/articles", authenticate, async (req, res) => {
   try {
     const { title, excerpt, content, category, targetKeyword, metaTitle, metaDescription, isPublished } =
       req.body;
@@ -103,7 +103,7 @@ router.post("/admin/articles", requireAuth, async (req, res) => {
 /**
  * PUT /api/admin/articles/:id — Update article
  */
-router.put("/admin/articles/:id", requireAuth, async (req, res) => {
+router.put("/admin/articles/:id", authenticate, async (req, res) => {
   try {
     const { title, excerpt, content, category, targetKeyword, metaTitle, metaDescription, isPublished } =
       req.body;
@@ -138,7 +138,7 @@ router.put("/admin/articles/:id", requireAuth, async (req, res) => {
 /**
  * DELETE /api/admin/articles/:id — Delete article
  */
-router.delete("/admin/articles/:id", requireAuth, async (req, res) => {
+router.delete("/admin/articles/:id", authenticate, async (req, res) => {
   try {
     await prisma.article.delete({ where: { id: req.params.id } });
     res.json({ success: true });
