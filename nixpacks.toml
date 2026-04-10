@@ -1,0 +1,13 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "openssl"]
+
+[phases.install]
+cmds = ["npm install --workspace=backend"]
+
+[phases.build]
+cmds = [
+  "cd backend && npx prisma generate"
+]
+
+[start]
+cmd = "cd backend && npx prisma db push --accept-data-loss && npx prisma db seed && npm start"
